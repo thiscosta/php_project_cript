@@ -3,6 +3,10 @@
 
 A PHP implementation of crypt methods like SHA1, SHA256, MD5 and etc. for Information Systems Bachelor (UNASP-HP)
 
+## Hash strategy
+
+The hash strategy that we decided to use was a mix of some algorithms: sha1, md5, and sha256. Basically, we generate a random MD5 salt that is used to concatenate with the user password, and with this two informations the algorithms sha256, md5 and sha1 are applied to generate the final password. The unique way to achieve the final password is using the unique hash + the right algorithms on the sequence.
+  
 ## Run Locally
 
 Clone the project
