@@ -53,15 +53,6 @@
 					</button>
 				</div>
 
-				<div class="text-center p-t-12">
-					<span class="txt1">
-						Forgot
-					</span>
-					<a class="form-login-links" href="#">
-						Username / Password?
-					</a>
-				</div>
-
 				<div class="text-center p-t-136">
 					<a class="form-login-create-account" href="cadastro.php">
 						Create your Account

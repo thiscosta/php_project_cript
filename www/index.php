@@ -30,20 +30,51 @@ include("verificaLogin.php");
 		#image {
 			position: fixed;
 		}
+
+		#image2 {
+			position: fixed;
+		}
+
+		#image3 {
+			position: fixed;
+		}
+
+		#image4 {
+			position: fixed;
+		}
 	</style>
 	<script>
 		function Init() {
+
 			picture = document.getElementById('image');
+			picture3 = document.getElementById('image3');
+			picture4 = document.getElementById('image4');
+
 
 			spaceW = screen.height - picture.height;
+			spaceW3 = screen.height - picture3.height;
+			spaceW4 = screen.height - picture4.height;
+
+
 			spaceH = screen.width - picture.width;
+			spaceH3 = screen.width - picture3.width;
+			spaceH4 = screen.width - picture4.width;
 
 			setInterval(moveIt, 500);
 		}
 
 		function moveIt() {
+
+
 			picture.style.top = Math.round(Math.random() * spaceW) + "px";
 			picture.style.left = Math.round(Math.random() * spaceH) + "px";
+
+			picture3.style.top = Math.round(Math.random() * spaceW3) + "px";
+			picture3.style.left = Math.round(Math.random() * spaceH3) + "px";
+
+			picture4.style.top = Math.round(Math.random() * spaceW4) + "px";
+			picture4.style.left = Math.round(Math.random() * spaceH4) + "px";
+
 		}
 	</script>
 </head>
@@ -53,7 +84,7 @@ include("verificaLogin.php");
 		<div class="container-fluid">
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark" width="100%" style="margin-top: -490px; border-radius: 10px;">
 				<div class="container-fluid">
-					<a class="navbar-brand" href="#">Navbar</a>
+					<a class="navbar-brand" href="#">cripto</a>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
@@ -82,7 +113,10 @@ include("verificaLogin.php");
 				Welcome, <?php echo $_SESSION['usuario'] ?>!
 			</p>
 			<p align="center">
-				<img id="image" width="500" height="500" src="https://c.tenor.com/JdqOAJYXiRsAAAAM/bom-dia-que-o-nosso.gif" alt="">
+
+				<img id="image3" width="300" height="300" src="images/gregory-carinha.jpeg" alt="">
+				<img id="image4" width="300" height="300" src="images/gregory-linguinha.jpeg" alt="">
+				<img id="image" width="300" height="300" src="images/gregory-gritinho.jpeg" alt="">
 				</>
 		</div>
 	</div>

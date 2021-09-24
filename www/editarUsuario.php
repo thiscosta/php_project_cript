@@ -80,10 +80,6 @@ if ($row) {
 					<input type="text" class="form-control" id="inputUsername" name="username" value="<?php echo htmlspecialchars($usuario->username); ?>">
 				</div>
 
-				<div class="mb-3">
-					<label for="exampleInputPassword1" class="form-label">Password</label>
-					<input type="password" class="form-control" name="password" id="exampleInputPassword1" value="<?php echo htmlspecialchars($usuario->password); ?>">
-				</div>
 				<div class="register-button" style="display:flex; justify-content:space-between; align-items:center;">
 					<a href="index.php" class="btn btn-primary"> Back </a>
 					<button type="submit" class="btn btn-primary">Submit</button>
